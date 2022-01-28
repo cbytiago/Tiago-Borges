@@ -14,6 +14,8 @@ $("#entrar").click(function(){
         senha.focus()
         return
     }
+
+    sessionStorage.setItem('usuarioLogado', '1');
     
     alert("Login com Sucesso!")
     $(location).attr('href', 'index.html');
